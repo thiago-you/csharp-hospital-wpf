@@ -58,9 +58,13 @@
     <Compile Include="Controler\SecretariaControler.cs" />
     <Compile Include="Controler\Util.cs" />
     <Compile Include="CustomValidationCPFAttribute.cs" />
-    <Compile Include="Migrations\201706190045369_Versao4.5.cs" />
-    <Compile Include="Migrations\201706190045369_Versao4.5.Designer.cs">
-      <DependentUpon>201706190045369_Versao4.5.cs</DependentUpon>
+    <Compile Include="Migrations\201706302232087_Versao1.0.cs" />
+    <Compile Include="Migrations\201706302232087_Versao1.0.Designer.cs">
+      <DependentUpon>201706302232087_Versao1.0.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706302345067_Versao1.1.cs" />
+    <Compile Include="Migrations\201706302345067_Versao1.1.Designer.cs">
+      <DependentUpon>201706302345067_Versao1.1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Agendamento.cs" />
@@ -80,8 +84,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706190045369_Versao4.5.resx">
-      <DependentUpon>201706190045369_Versao4.5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706302232087_Versao1.0.resx">
+      <DependentUpon>201706302232087_Versao1.0.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706302345067_Versao1.1.resx">
+      <DependentUpon>201706302345067_Versao1.1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

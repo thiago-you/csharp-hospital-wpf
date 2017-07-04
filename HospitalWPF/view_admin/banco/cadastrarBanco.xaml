@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.banco"
         mc:Ignorable="d"
-        Title="cadastrarBanco" Height="300" Width="300">
+        Title="Cadastrar Banco" Height="230" Width="480">
     <Grid>
-        
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="20,0,0,25" VerticalAlignment="Bottom" Width="120" Height="50" Click="btnSalvar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Right" Margin="0,0,20,25" VerticalAlignment="Bottom" Width="120" Height="50" Click="btnCancelar_Click"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Agência:" HorizontalAlignment="Left" Margin="20,59,0,0" VerticalAlignment="Top"/>
+        <Label Content="Conta:" HorizontalAlignment="Left" Margin="269,61,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="136,26,-157,0" TextWrapping="Wrap" Text="{Binding Banco.Nome}" VerticalAlignment="Top" Width="313"/>
+        <TextBox x:Name="txtAgecnia" HorizontalAlignment="Left" Height="23" Margin="136,61,0,0" TextWrapping="Wrap" Text="{Binding Banco.Agencia}" VerticalAlignment="Top" Width="133"/>
+        <TextBox x:Name="txtConta" HorizontalAlignment="Left" Height="23" Margin="316,61,0,0" TextWrapping="Wrap" Text="{Binding Banco.Conta}" VerticalAlignment="Top" Width="133"/>
     </Grid>
 </Window>

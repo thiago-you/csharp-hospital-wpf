@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.medico"
         mc:Ignorable="d"
-        Title="cadastrarMedico" Height="345" Width="580">
+        Title="Cadastrar Medico" Height="355" Width="580">
     <Grid>
         <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnSalvar_Click"/>
         <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="430,250,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnCancelar_Click"/>

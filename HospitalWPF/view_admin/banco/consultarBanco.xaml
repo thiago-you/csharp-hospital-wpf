@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.banco"
         mc:Ignorable="d"
-        Title="consultarBanco" Height="300" Width="300">
+        Title="Consultar Bancos" Height="330" Width="590">
     <Grid>
-        
+        <DataGrid x:Name="gridObjetos" ItemsSource="{Binding Objetos}" SelectedItem="{Binding Objeto, Mode=TwoWay}" Margin="20,0,20,70"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="20,235,0,0" VerticalAlignment="Top" Width="102" Height="50" Click="btnCadastrar_Click"/>
+        <Button x:Name="btnAtualizar" Content="Atualizar" HorizontalAlignment="Left" Margin="160,235,0,0" VerticalAlignment="Top" Width="103" Height="50" Click="btnAtualizar_Click"/>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Right" Margin="0,235,20,0" VerticalAlignment="Top" Width="102" Height="50" Click="btnVoltar_Click"/>
     </Grid>
 </Window>

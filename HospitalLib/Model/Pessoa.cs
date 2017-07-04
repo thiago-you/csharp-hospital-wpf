@@ -22,7 +22,7 @@ namespace HospitalModel
         [MinLength(11)]
         [CustomValidationCPF(ErrorMessageResourceName = "CPFInvalido")]
         public String Cpf { get; set; }
-        public DateTime DataNasc { get; set; }
+        public Nullable<DateTime> DataNasc { get; set; }
         [StringLength(12)]
         public String Telefone { get; set; }
 

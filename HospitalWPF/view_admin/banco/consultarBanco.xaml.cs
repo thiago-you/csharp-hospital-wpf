@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HospitalLib.Controler;
+using HospitalModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,57 @@ namespace HospitalWPF.view_admin.banco
     /// </summary>
     public partial class consultarBanco : Window
     {
+        private BancoControler control = new BancoControler();
+        public ICollection<Banco> Objetos { get; set; }
+
+        private Banco _objeto = new Banco();
+        public Banco Objeto
+        {
+            get { return _objeto; }
+            set
+            {
+                this._objeto = value;
+            }
+        }
+
         public consultarBanco()
         {
             InitializeComponent();
+            this.Objetos = control.ObterBancos();
+            this.DataContext = this;
+        }
+
+        public void Binding()
+        {
+            gridObjetos.ItemsSource = null;
+            gridObjetos.ItemsSource = control.ObterBancos();
+        }
+
+        private void btnCadastrar_Click(object sender, RoutedEventArgs e)
+        {
+            cadastrarBanco win = new cadastrarBanco();
+            win.ShowDialog();
+            if (win.DialogResult.HasValue && win.DialogResult.Value)
+            {
+                this.Binding();
+            }
+        }
+
+        private void btnAtualizar_Click(object sender, RoutedEventArgs e)
+        {
+            cadastrarBanco win = new cadastrarBanco();
+            win.Banco = this.Objeto;
+
+            win.ShowDialog();
+            if (win.DialogResult.HasValue && win.DialogResult.Value)
+            {
+                this.Binding();
+            }
+        }
+
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

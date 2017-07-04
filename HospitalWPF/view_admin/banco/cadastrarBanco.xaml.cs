@@ -1,5 +1,8 @@
-﻿using System;
+﻿using HospitalLib.Controler;
+using HospitalModel;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +22,45 @@ namespace HospitalWPF.view_admin.banco
     /// </summary>
     public partial class cadastrarBanco : Window
     {
+        BancoControler control = new BancoControler();
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(String info)
+        {
+            if (this.PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+
+        private Banco _banco = new Banco();
+        public Banco Banco
+        {
+            get { return _banco; }
+            set
+            {
+                this._banco = value;
+                this.NotifyPropertyChanged("Banco");
+            }
+        }
+
         public cadastrarBanco()
         {
             InitializeComponent();
+            this.DataContext = this;
+        }
+
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+            control.SalvarBanco(this.Banco);
+
+            this.DialogResult = true;
+            this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

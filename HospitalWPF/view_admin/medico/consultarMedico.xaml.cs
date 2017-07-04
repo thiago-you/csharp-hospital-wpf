@@ -23,7 +23,17 @@ namespace HospitalWPF.view_admin.medico
     
         private MedicoControler control = new MedicoControler();
         public ICollection<Medico> Medicos { get; set; }
-        
+
+        private Medico _objeto = new Medico();
+        public Medico Objeto
+        {
+            get { return _objeto; }
+            set
+            {
+                this._objeto = value;
+            }
+        }
+
         public consultarMedico()
         {
             InitializeComponent();
@@ -49,7 +59,13 @@ namespace HospitalWPF.view_admin.medico
         private void btnAtualizar_Click(object sender, RoutedEventArgs e)
         {
             cadastrarMedico win = new cadastrarMedico();
+            win.Medico = this.Objeto;
+
             win.ShowDialog();
+            if (win.DialogResult.HasValue && win.DialogResult.Value)
+            {
+                this.Binding();
+            }
         }
 
         private void btnCancelar_Click(object sender, RoutedEventArgs e)

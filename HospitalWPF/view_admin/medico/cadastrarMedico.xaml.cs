@@ -61,8 +61,7 @@ namespace HospitalWPF.view_admin.medico
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
-            this.Medico.DataNasc = DateTime.Now;
-            this.Medico.Turno = "Madrugada";
+            this.Medico.Turno = cbTurno.Text;
             this.Medico.Banco = BancoSelecionado;
             this.Medico.AreaAtuacao = AreaSelecionada;
 
@@ -76,6 +75,5 @@ namespace HospitalWPF.view_admin.medico
         {
             this.Close();
         }
-
     }
 }

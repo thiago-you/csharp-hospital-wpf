@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.medico"
         mc:Ignorable="d"
-        Title="consultarMedico" Height="340" Width="690">
+        Title="Consultar Medico" Height="350" Width="690">
     <Grid>
-        <DataGrid x:Name="gridMedico" ItemsSource="{Binding Path=Medicos}" Margin="0,0,0,80">
+        <DataGrid x:Name="gridMedico" ItemsSource="{Binding Path=Medicos}" SelectedItem="{Binding Path=Objeto, Mode=TwoWay}" Margin="20,0,24,80">
             
         </DataGrid>
         <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnCadastrar_Click"/>

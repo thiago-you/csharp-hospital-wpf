@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HospitalLib.Controler;
+using HospitalModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,57 @@ namespace HospitalWPF.view_admin.areaAtuacao
     /// </summary>
     public partial class consultarAreaAtuacao : Window
     {
+        private AreaAtuacaoControler control = new AreaAtuacaoControler();
+        public ICollection<AreaAtuacao> Objetos { get; set; }
+
+        private AreaAtuacao _objeto = new AreaAtuacao();
+        public AreaAtuacao Objeto
+        {
+            get { return _objeto; }
+            set
+            {
+                this._objeto = value;
+            }
+        }
+
         public consultarAreaAtuacao()
         {
             InitializeComponent();
+            this.Objetos = control.ObterObjetos();
+            this.DataContext = this;
+        }
+
+        public void Binding()
+        {
+            gridObjetos.ItemsSource = null;
+            gridObjetos.ItemsSource = control.ObterObjetos();
+        }
+
+        private void btnCadastrar_Click(object sender, RoutedEventArgs e)
+        {
+            cadastrarAreaAtuacao win = new cadastrarAreaAtuacao();
+            win.ShowDialog();
+            if (win.DialogResult.HasValue && win.DialogResult.Value)
+            {
+                this.Binding();
+            }
+        }
+
+        private void btnAtualizar_Click(object sender, RoutedEventArgs e)
+        {
+            cadastrarAreaAtuacao win = new cadastrarAreaAtuacao();
+            win.AreaAtuacao = this.Objeto;
+
+            win.ShowDialog();
+            if (win.DialogResult.HasValue && win.DialogResult.Value)
+            {
+                this.Binding();
+            }
+        }
+
+        private void btnVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
