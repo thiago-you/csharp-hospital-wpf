@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.consulta"
         mc:Ignorable="d"
-        Title="consultarConsulta" Height="300" Width="300">
+        Title="Consultas" Height="340" Width="735">
     <Grid>
-        
+        <DataGrid x:Name="gridObjetos" ItemsSource="{Binding Objetos}" SelectedItem="{Binding Objeto, Mode=TwoWay}" Margin="20,0,20,85"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Bottom" Width="120" Height="50" Click="btnCadastrar_Click"/>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Right" Margin="0,0,20,20" VerticalAlignment="Bottom" Width="120" Height="50" Click="btnVoltar_Click"/>
     </Grid>
 </Window>

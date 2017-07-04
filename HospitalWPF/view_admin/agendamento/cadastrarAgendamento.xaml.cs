@@ -1,5 +1,8 @@
-﻿using System;
+﻿using HospitalLib.Controler;
+using HospitalModel;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +22,62 @@ namespace HospitalWPF.view_admin.agendamento
     /// </summary>
     public partial class cadastrarAgendamento : Window
     {
+        AgendamentoControler control = new AgendamentoControler();
+        PacienteControler pacienteControl = new PacienteControler();
+        MedicoControler medicoControl = new MedicoControler();
+        SecretariaControler adminControl = new SecretariaControler();
+
+        public IList<Paciente> Pacientes { get; set; } = new List<Paciente>();
+        public Paciente PacienteSelecionado { get; set; } = null;
+        public IList<Medico> Medicos { get; set; } = new List<Medico>();
+        public Medico MedicoSelecionado { get; set; } = null;
+        public IList<Secretaria> Admins { get; set; } = new List<Secretaria>();
+        public Secretaria AdminSelecionado { get; set; } = null;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(String info)
+        {
+            if (this.PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+
+        private Agendamento _agendamento = new Agendamento();
+        public Agendamento Agendamento
+        {
+            get { return _agendamento; }
+            set
+            {
+                this._agendamento = value;
+                this.NotifyPropertyChanged("Agendamento");
+            }
+        }
+
         public cadastrarAgendamento()
         {
             InitializeComponent();
+            Pacientes = pacienteControl.ObterObjetos();
+            Medicos = medicoControl.ObterMedicos();
+            Admins = adminControl.ObterObjetos();
+            this.DataContext = this;
+        }
+
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Agendamento.DataAgendada = DateTime.Now;
+            this.Agendamento.Paciente = PacienteSelecionado;
+            this.Agendamento.Medico = MedicoSelecionado;
+            this.Agendamento.Secretaria = AdminSelecionado;
+            control.SalvarObjeto(this.Agendamento);
+
+            this.DialogResult = true;
+            this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
