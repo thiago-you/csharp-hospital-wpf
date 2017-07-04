@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalWPF\obj\Debug\
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\obj\Debug\
 HospitalWPF
 none
 false
 DEBUG;TRACE
-E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalWPF\App.xaml
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\App.xaml
 22541034120
 
 30-1183378798
-14-256185176
+14-1755326588
 login.xaml;view_admin\adminHome.xaml;view_admin\administrador\cadastrarAdmin.xaml;view_admin\administrador\consultarAdmin.xaml;view_admin\agendamento\cadastrarAgendamento.xaml;view_admin\agendamento\consultarAgendamentos.xaml;view_admin\areaAtuacao\cadastrarAreaAtuacao.xaml;view_admin\areaAtuacao\consultarAreaAtuacao.xaml;view_admin\banco\cadastrarBanco.xaml;view_admin\banco\consultarBanco.xaml;view_admin\consulta\cadastrarConsulta.xaml;view_admin\consulta\consultarConsulta.xaml;view_admin\convenio\cadastrarConvenio.xaml;view_admin\convenio\consultarConvenio.xaml;view_admin\medico\cadastrarMedico.xaml;view_admin\medico\consultarMedico.xaml;view_admin\paciente\cadastrarPaciente.xaml;view_admin\paciente\consultarPaciente.xaml;view_medico\agendamentos.xaml;view_medico\consultas.xaml;view_medico\medico.xaml;view_medico\medicoLogin.xaml;
 
 True
