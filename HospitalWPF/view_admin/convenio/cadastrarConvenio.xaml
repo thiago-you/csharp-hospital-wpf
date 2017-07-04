@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.convenio"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="Cadastrar Convênio" Height="280" Width="475">
     <Grid>
@@ -14,6 +16,6 @@
         <Label Content="Telefone:" HorizontalAlignment="Left" Margin="20,86,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPlano" HorizontalAlignment="Left" Height="23" Margin="136,26,-157,0" TextWrapping="Wrap" Text="{Binding Convenio.NomePlano}" VerticalAlignment="Top" Width="313"/>
         <TextBox x:Name="txtEmpresa" HorizontalAlignment="Left" Height="23" Margin="136,55,0,0" TextWrapping="Wrap" Text="{Binding Convenio.NomeEmpresa}" VerticalAlignment="Top" Width="313"/>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="136,89,0,0" TextWrapping="Wrap" Text="{Binding Convenio.Telefone}" VerticalAlignment="Top" Width="313"/>
+        <xctk:MaskedTextBox Mask="(00) 0000-0000" ValueDataType="{x:Type s:String}" x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="136,89,0,0" TextWrapping="Wrap" Text="{Binding Convenio.Telefone}" VerticalAlignment="Top" Width="313"/>
     </Grid>
 </Window>

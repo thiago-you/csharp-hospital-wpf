@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.medico"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="Cadastrar Medico" Height="355" Width="580">
     <Grid>
@@ -18,14 +20,14 @@
         <Label Content="Telefone:" HorizontalAlignment="Left" Margin="294,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.115"/>
         <Label Content="Data Nascimento:" HorizontalAlignment="Left" Margin="294,73,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="136,26,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Nome}" VerticalAlignment="Top" Width="414"/>
-        <TextBox x:Name="txtCrm" HorizontalAlignment="Left" Height="23" Margin="136,52,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Crm}" VerticalAlignment="Top" Width="143"/>
-        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="136,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Cpf}" VerticalAlignment="Top" Width="143"/>
+        <xctk:MaskedTextBox Mask="0000/AA" ValueDataType="{x:Type s:String}" x:Name="txtCrm" HorizontalAlignment="Left" Height="23" Margin="136,52,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Crm}" VerticalAlignment="Top" Width="143"/>
+        <xctk:MaskedTextBox Mask="000.000.000-00" ValueDataType="{x:Type s:String}" x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="136,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Cpf}" VerticalAlignment="Top" Width="143"/>
         <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="136,104,0,0" VerticalAlignment="Top" Width="414" SelectedValue="{Binding Path=Medico.Turno}">
             <ComboBoxItem Content="Díurno"/>
             <ComboBoxItem Content="Noturno"/>
             <ComboBoxItem Content="Madrugada"/>
         </ComboBox>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="407,52,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Telefone}" VerticalAlignment="Top" Width="143"/>
+        <xctk:MaskedTextBox Mask="(00) 0000-0000" ValueDataType="{x:Type s:String}" x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="407,52,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Telefone}" VerticalAlignment="Top" Width="143"/>
         <DatePicker x:Name="dateNasc" HorizontalAlignment="Left" Margin="407,78,0,0" SelectedDate="{Binding Path=Medico.DataNasc}" VerticalAlignment="Top" Width="143"/>
         <ComboBox x:Name="cbBanco" HorizontalAlignment="Left" Margin="136,130,0,0" VerticalAlignment="Top" Width="414" ItemsSource="{Binding Path=Bancos}" SelectedValue="{Binding Path=BancoSelecionado}"/>
         <ComboBox x:Name="cbArea" HorizontalAlignment="Left" Margin="136,158,0,0" VerticalAlignment="Top" Width="414" ItemsSource="{Binding Path=Areas}" SelectedValue="{Binding Path=AreaSelecionada}"/>

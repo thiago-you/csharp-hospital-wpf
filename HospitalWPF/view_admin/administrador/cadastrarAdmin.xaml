@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.admin"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="Cadastrar Administrador" Height="270" Width="580">
     <Grid>
@@ -15,8 +17,8 @@
         <Label Content="Telefone:" HorizontalAlignment="Left" Margin="294,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.115"/>
         <Label Content="Data Nascimento:" HorizontalAlignment="Left" Margin="294,56,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="136,26,0,0" TextWrapping="Wrap" Text="{Binding Admin.Nome}" VerticalAlignment="Top" Width="414"/>
-        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="136,61,0,0" TextWrapping="Wrap" Text="{Binding Admin.Cpf}" VerticalAlignment="Top" Width="143"/>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="407,98,0,0" TextWrapping="Wrap" Text="{Binding Admin.Telefone}" VerticalAlignment="Top" Width="143"/>
+        <xctk:MaskedTextBox Mask="000.000.000-00" ValueDataType="{x:Type s:String}" TextWrapping="Wrap" x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="136,61,0,0" Text="{Binding Admin.Cpf}" VerticalAlignment="Top" Width="143"/>
+        <xctk:MaskedTextBox Mask="(00) 0000-0000" ValueDataType="{x:Type s:String}" x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="407,98,0,0" TextWrapping="Wrap" Text="{Binding Admin.Telefone}" VerticalAlignment="Top" Width="143"/>
         <DatePicker x:Name="dateNasc" HorizontalAlignment="Left" Margin="407,61,0,0" SelectedDate="{Binding Admin.DataNasc}" VerticalAlignment="Top" Width="143"/>
         <ComboBox x:Name="cbBanco" HorizontalAlignment="Left" Margin="136,98,0,0" VerticalAlignment="Top" Width="143" ItemsSource="{Binding Bancos}" SelectedValue="{Binding BancoSelecionado}"/>
     </Grid>

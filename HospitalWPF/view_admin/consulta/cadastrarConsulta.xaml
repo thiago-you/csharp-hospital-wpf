@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.consulta"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:s="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Title="Realizar Consulta" Height="300" Width="600">
     <Grid>
@@ -21,6 +23,6 @@
         <DatePicker x:Name="dateHorario" HorizontalAlignment="Left" Margin="431,78,-280,0" SelectedDate="{Binding Horario}" VerticalAlignment="Top" Width="141"/>
         <DatePicker x:Name="dateData" HorizontalAlignment="Left" Margin="136,79,-13,0"  SelectedDate="{Binding Data}" VerticalAlignment="Top" Width="169"/>
         <ComboBox x:Name="cbAgendamento" HorizontalAlignment="Left" Margin="431,109,0,0" VerticalAlignment="Top" Width="141" ItemsSource="{Binding Agendamentos}" SelectedValue="{Binding AgendamentoSelecionado}"/>
-        <TextBox x:Name="txtValor" HorizontalAlignment="Left" Height="23" Margin="136,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
+        <xctk:MaskedTextBox Mask="000,00" ValueDataType="{x:Type s:String}" x:Name="txtValor" HorizontalAlignment="Left" Height="23" Margin="136,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
     </Grid>
 </Window>
