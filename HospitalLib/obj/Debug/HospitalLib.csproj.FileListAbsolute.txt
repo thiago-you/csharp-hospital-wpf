@@ -215,3 +215,15 @@ C:\Users\thyago\Documents\Hospital - Projeto\Hospital v4.5\HospitalSolution\Hosp
 C:\Users\thyago\Documents\Hospital - Projeto\Hospital v4.5\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.pdb
 C:\Users\thyago\Documents\Hospital - Projeto\Hospital v4.5\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao45.resources
 C:\Users\thyago\Documents\Hospital - Projeto\Hospital v4.5\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.csproj.GenerateResource.Cache
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\bin\Debug\HospitalLib.dll.config
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\bin\Debug\HospitalLib.dll
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\bin\Debug\HospitalLib.pdb
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\bin\Debug\EntityFramework.dll
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\bin\Debug\EntityFramework.SqlServer.dll
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\bin\Debug\EntityFramework.xml
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\bin\Debug\EntityFramework.SqlServer.xml
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.csprojResolveAssemblyReference.cache
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao45.resources
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.csproj.GenerateResource.Cache
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.dll
+E:\Hospital_2\Hospital WPA v0.2\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.pdb

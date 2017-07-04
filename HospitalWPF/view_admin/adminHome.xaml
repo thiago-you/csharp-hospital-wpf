@@ -1,0 +1,20 @@
+﻿<Window x:Class="HospitalWPF.view_admin.adminHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalWPF.view_admin"
+        mc:Ignorable="d"
+        Title="Administrador" Height="366" Width="605">
+    <Grid>
+        <Button x:Name="btnMedico" Content="Médicos" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="btnMedico_Click"/>
+        <Button x:Name="btnAdmin" Content="Administradores" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="btnAdmin_Click"/>
+        <Button x:Name="btnPaciente" Content="Pacientes" HorizontalAlignment="Left" Margin="10,201,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="btnPaciente_Click"/>
+        <Button x:Name="btnBanco" Content="Bancos" HorizontalAlignment="Left" Margin="200,37,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="btnBanco_Click"/>
+        <Button x:Name="btnAreaAtuacao" Content="Área de Atuação" HorizontalAlignment="Left" Margin="200,113,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="btnAreaAtuacao_Click"/>
+        <Button x:Name="btnConvenio" Content="Convênios" HorizontalAlignment="Left" Margin="200,201,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="btnConvenio_Click"/>
+        <Button x:Name="btnAgendamento" Content="Agendamentos" HorizontalAlignment="Left" Margin="390,37,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="btnAgendamento_Click"/>
+        <Button x:Name="btnConsulta" Content="Consultas" HorizontalAlignment="Left" Margin="390,113,0,0" VerticalAlignment="Top" Width="150" Height="60" Click="btnConsulta_Click"/>
+        <Button x:Name="btnLogout" Content="Logout" HorizontalAlignment="Left" Margin="467,275,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnLogout_Click"/>
+    </Grid>
+</Window>

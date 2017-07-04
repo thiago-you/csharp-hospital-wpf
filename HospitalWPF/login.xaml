@@ -1,0 +1,19 @@
+﻿<Window x:Class="HospitalWPF.login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalWPF"
+        mc:Ignorable="d"
+        Title="Login" Height="262.5" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250*"/>
+            <ColumnDefinition Width="250*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnAdmin" Content="Administrador" HorizontalAlignment="Left" Margin="32,60,0,0" VerticalAlignment="Top" Width="184" Height="70" Click="btnAdmin_Click"/>
+        <Button x:Name="btnMedico" Content="Médico" HorizontalAlignment="Left" Margin="32,60,0,0" VerticalAlignment="Top" Width="184" Grid.Column="1" Height="70" Click="btnMedico_Click"/>
+        <Label FontSize="10" HorizontalAlignment="Left" Margin="20,0,0,5" VerticalAlignment="Bottom">MSC - Medic System Control v4.6</Label>
+        <Label Grid.Column="1" FontSize="10" HorizontalAlignment="Right" Margin="0,0,20,5" VerticalAlignment="Bottom">@CopyRight - Thiago You</Label>
+    </Grid>
+</Window>

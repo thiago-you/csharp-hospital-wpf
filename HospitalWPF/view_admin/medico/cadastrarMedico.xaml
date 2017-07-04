@@ -1,0 +1,33 @@
+﻿<Window x:Class="HospitalWPF.view_admin.medico.cadastrarMedico"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalWPF.view_admin.medico"
+        mc:Ignorable="d"
+        Title="cadastrarMedico" Height="345" Width="580">
+    <Grid>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnSalvar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="430,250,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnCancelar_Click"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="CRM:" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="20,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="Turno:" HorizontalAlignment="Left" Margin="20,102,0,0" VerticalAlignment="Top"/>
+        <Label Content="Banco:" HorizontalAlignment="Left" Margin="20,128,0,0" VerticalAlignment="Top"/>
+        <Label Content="Área de Atuação:" HorizontalAlignment="Left" Margin="20,154,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="294,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.115"/>
+        <Label Content="Data Nascimento:" HorizontalAlignment="Left" Margin="294,73,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="136,26,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Nome}" VerticalAlignment="Top" Width="414"/>
+        <TextBox x:Name="txtCrm" HorizontalAlignment="Left" Height="23" Margin="136,52,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Crm}" VerticalAlignment="Top" Width="143"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="136,78,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Cpf}" VerticalAlignment="Top" Width="143"/>
+        <ComboBox x:Name="cbTurno" HorizontalAlignment="Left" Margin="136,104,0,0" VerticalAlignment="Top" Width="414" SelectedValue="{Binding Path=Medico.Turno}">
+            <ComboBoxItem Content="Díurno"/>
+            <ComboBoxItem Content="Noturno"/>
+            <ComboBoxItem Content="Madrugada"/>
+        </ComboBox>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="407,52,0,0" TextWrapping="Wrap" Text="{Binding Path=Medico.Telefone}" VerticalAlignment="Top" Width="143"/>
+        <DatePicker x:Name="dateNasc" HorizontalAlignment="Left" Margin="407,78,0,0" SelectedDate="{Binding Path=Medico.DataNasc}" VerticalAlignment="Top" Width="143"/>
+        <ComboBox x:Name="cbBanco" HorizontalAlignment="Left" Margin="136,130,0,0" VerticalAlignment="Top" Width="414" ItemsSource="{Binding Path=Bancos}" SelectedValue="{Binding Path=BancoSelecionado}"/>
+        <ComboBox x:Name="cbArea" HorizontalAlignment="Left" Margin="136,158,0,0" VerticalAlignment="Top" Width="414" ItemsSource="{Binding Path=Areas}" SelectedValue="{Binding Path=AreaSelecionada}"/>
+    </Grid>
+</Window>
