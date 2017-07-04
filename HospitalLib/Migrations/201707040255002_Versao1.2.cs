@@ -3,7 +3,7 @@ namespace HospitalLib.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Versao10 : DbMigration
+    public partial class Versao12 : DbMigration
     {
         public override void Up()
         {
@@ -34,7 +34,7 @@ namespace HospitalLib.Migrations
                         Turno = c.String(nullable: false),
                         Nome = c.String(nullable: false),
                         Cpf = c.String(maxLength: 11),
-                        DataNasc = c.DateTime(nullable: false),
+                        DataNasc = c.DateTime(),
                         Telefone = c.String(maxLength: 12),
                         AreaAtuacao_Id = c.Int(nullable: false),
                         Banco_Id = c.Int(),
@@ -73,7 +73,7 @@ namespace HospitalLib.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Nome = c.String(nullable: false),
                         Cpf = c.String(maxLength: 11),
-                        DataNasc = c.DateTime(nullable: false),
+                        DataNasc = c.DateTime(),
                         Telefone = c.String(maxLength: 12),
                         Convenio_Id = c.Int(nullable: false),
                     })
@@ -99,7 +99,7 @@ namespace HospitalLib.Migrations
                         Id = c.Int(nullable: false, identity: true),
                         Nome = c.String(nullable: false),
                         Cpf = c.String(maxLength: 11),
-                        DataNasc = c.DateTime(nullable: false),
+                        DataNasc = c.DateTime(),
                         Telefone = c.String(maxLength: 12),
                         Banco_Id = c.Int(),
                     })

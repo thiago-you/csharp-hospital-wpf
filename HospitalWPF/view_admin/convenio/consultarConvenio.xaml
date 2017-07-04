@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Consultar Convênios" Height="345" Width="685">
     <Grid>
-        <DataGrid x:Name="gridObjetos" ItemsSource="{Binding Objetos}" SelectedItem="{Binding Objeto, Mode=TwoWay}" Margin="17,0,20,85"/>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="17,235,0,0" VerticalAlignment="Top" Width="102" Height="50" Click="btnCadastrar_Click"/>
-        <Button x:Name="btnAtualizar" Content="Atualizar" HorizontalAlignment="Left" Margin="136,235,0,0" VerticalAlignment="Top" Width="103" Height="50" Click="btnAtualizar_Click"/>
+        <DataGrid x:Name="gridObjetos" ItemsSource="{Binding Objetos}" SelectedItem="{Binding Objeto, Mode=TwoWay}" Margin="20,0,20,85"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="20,235,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnCadastrar_Click"/>
+        <Button x:Name="btnAtualizar" Content="Atualizar" HorizontalAlignment="Left" Margin="160,235,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnAtualizar_Click"/>
         <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Right" Margin="0,235,20,0" VerticalAlignment="Top" Width="102" Height="50" Click="btnVoltar_Click"/>
     </Grid>
 </Window>

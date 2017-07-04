@@ -1,5 +1,8 @@
-﻿using System;
+﻿using HospitalLib.Controler;
+using HospitalModel;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,9 +22,51 @@ namespace HospitalWPF.view_admin.paciente
     /// </summary>
     public partial class cadastrarPaciente : Window
     {
+        PacienteControler control = new PacienteControler();
+        ConvenioControler convenioControl = new ConvenioControler();
+
+        public IList<Convenio> Convenios { get; set; } = new List<Convenio>();
+        public Convenio ConvenioSelecionado { get; set; } = null;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void NotifyPropertyChanged(String info)
+        {
+            if (this.PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(info));
+            }
+        }
+
+        private Paciente _paciente = new Paciente();
+        public Paciente Paciente
+        {
+            get { return _paciente; }
+            set
+            {
+                this._paciente = value;
+                this.NotifyPropertyChanged("Paciente");
+            }
+        }
+
         public cadastrarPaciente()
         {
             InitializeComponent();
+            Convenios = convenioControl.ObterObjetos();
+            this.DataContext = this;
+        }
+
+        private void btnSalvar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Paciente.Convenio = ConvenioSelecionado;
+            control.SalvarObjeto(this.Paciente);
+
+            this.DialogResult = true;
+            this.Close();
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

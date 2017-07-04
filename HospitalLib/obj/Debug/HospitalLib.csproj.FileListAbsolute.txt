@@ -240,3 +240,15 @@ E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalLib\obj\Debug\HospitalL
 E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao10.resources
 E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.csproj.GenerateResource.Cache
 E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao11.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\HospitalLib.dll.config
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\HospitalLib.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\HospitalLib.pdb
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\EntityFramework.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\EntityFramework.xml
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.csprojResolveAssemblyReference.cache
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.pdb
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao12.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.csproj.GenerateResource.Cache

@@ -24,8 +24,8 @@ namespace HospitalWPF.view_admin.convenio
         private ConvenioControler control = new ConvenioControler();
         public ICollection<Convenio> Objetos { get; set; }
 
-        private AreaAtuacao _objeto = new AreaAtuacao();
-        public AreaAtuacao Objeto
+        private Convenio _objeto = new Convenio();
+        public Convenio Objeto
         {
             get { return _objeto; }
             set
@@ -34,17 +34,17 @@ namespace HospitalWPF.view_admin.convenio
             }
         }
 
-        public void Binding()
-        {
-            gridObjetos.ItemsSource = null;
-            gridObjetos.ItemsSource = control.ObterObjetos();
-        }
-
         public consultarConvenio()
         {
             InitializeComponent();
             this.Objetos = control.ObterObjetos();
             this.DataContext = this;
+        }
+
+        public void Binding()
+        {
+            gridObjetos.ItemsSource = null;
+            gridObjetos.ItemsSource = control.ObterObjetos();
         }
 
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
@@ -71,7 +71,7 @@ namespace HospitalWPF.view_admin.convenio
 
         private void btnVoltar_Click(object sender, RoutedEventArgs e)
         {
-            this.Close()~;
+            this.Close();
         }
     }
 }

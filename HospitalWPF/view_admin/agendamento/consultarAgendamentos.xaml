@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.agendamento"
         mc:Ignorable="d"
-        Title="consultarAgendamentos" Height="300" Width="300">
+        Title="consultarAgendamentos" Height="300" Width="534">
     <Grid>
         
     </Grid>

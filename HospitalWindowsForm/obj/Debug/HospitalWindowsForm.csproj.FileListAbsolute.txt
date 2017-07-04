@@ -513,3 +513,40 @@ E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalWindowsForm\obj\Debug\H
 E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.csproj.GenerateResource.Cache
 E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.exe
 E:\Hospital_2\Hospital WPA v1.0\HospitalSolution\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.pdb
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.csprojResolveAssemblyReference.cache
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmCadastrarAdmin.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.agendamento.frmAgendamentos.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.frmCadastrarAreaAtuacao.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmCadastrarBanco.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmAgendarConsulta.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.consulta.frmConsultas.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmCadastrarConvenio.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmCadastrarPaciente.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmConsultarPaciente.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmConsultarAdmin.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmConsultarAreaAtuacao.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmConsultarBanco.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.frmAdmin.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.frmLogin.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmCadastrarMedico.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmConsultarConvenio.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmConsultarMedico.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_admin.frmRealizarConsulta.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_medico.frmAgendamentos.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_medico.frmConsultas.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.frmMedico.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.Properties.Resources.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.view_medico.frmMedicoLogin.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.csproj.GenerateResource.Cache
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.exe
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\obj\Debug\HospitalWindowsForm.pdb
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\HospitalWindowsForm.exe.config
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\HospitalWindowsForm.exe
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\HospitalWindowsForm.pdb
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\EntityFramework.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\HospitalLib.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\HospitalLib.pdb
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\HospitalLib.dll.config
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\EntityFramework.xml
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWindowsForm\bin\Debug\EntityFramework.SqlServer.xml

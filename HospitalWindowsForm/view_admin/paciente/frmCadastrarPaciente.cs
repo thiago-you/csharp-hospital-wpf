@@ -33,7 +33,7 @@ namespace HospitalWindowsForm.view_admin
             if (objeto.Id > 0) {
                 txtNome.Text = objeto.Nome;
                 txtCpf.Text = objeto.Cpf;
-                dateNasc.Value = objeto.DataNasc;
+                dateNasc.Value = (DateTime)objeto.DataNasc;
                 txtTelefone.Text = objeto.Telefone;
                 cbConvenio.SelectedValue = objeto.Convenio.Id;
             }

@@ -38,7 +38,7 @@ namespace HospitalWindowsForm.view_admin
                 txtNome.Text = Medico.Nome;
                 txtCpf.Text = Medico.Cpf;
                 txtCrm.Text = Medico.Crm;
-                dateNasc.Value = Medico.DataNasc;
+                dateNasc.Value = (DateTime)Medico.DataNasc;
                 cbTurno.Text = Medico.Turno;
                 txtTelefone.Text = Medico.Telefone;
                 cbBanco.SelectedValue = Medico.Banco.Id;

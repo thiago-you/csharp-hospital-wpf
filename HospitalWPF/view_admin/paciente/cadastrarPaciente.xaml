@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.paciente"
         mc:Ignorable="d"
-        Title="cadastrarPaciente" Height="300" Width="300">
+        Title="Cadastrar Paciente" Height="275" Width="600">
     <Grid>
-        
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Bottom" Width="120" Height="50" Click="btnSalvar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="right" Margin="0,0,20,20" VerticalAlignment="Bottom" Width="120" Height="50" Click="btnCancelar_Click"/>
+        <Label Content="Nome:" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="CPF:" HorizontalAlignment="Left" Margin="20,59,0,0" VerticalAlignment="Top"/>
+        <Label Content="Convênio:" HorizontalAlignment="Left" Margin="20,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="283,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.316,0.115"/>
+        <Label Content="Data Nascimento:" HorizontalAlignment="Left" Margin="283,58,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="98,26,0,0" TextWrapping="Wrap" Text="{Binding Paciente.Nome}" VerticalAlignment="Top" Width="474"/>
+        <TextBox x:Name="txtCpf" HorizontalAlignment="Left" Height="23" Margin="98,61,0,0" TextWrapping="Wrap" Text="{Binding Paciente.Cpf}" VerticalAlignment="Top" Width="165"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="392,98,0,0" TextWrapping="Wrap" Text="{Binding Paciente.Telefone}" VerticalAlignment="Top" Width="180"/>
+        <DatePicker x:Name="dateNasc" HorizontalAlignment="Left" Margin="392,61,0,0" SelectedDate="{Binding Paciente.DataNasc}" VerticalAlignment="Top" Width="180"/>
+        <ComboBox x:Name="cbConvenio" HorizontalAlignment="Left" Margin="98,98,0,0" VerticalAlignment="Top" Width="165" ItemsSource="{Binding Convenios}" SelectedValue="{Binding ConvenioSelecionado}"/>
     </Grid>
 </Window>

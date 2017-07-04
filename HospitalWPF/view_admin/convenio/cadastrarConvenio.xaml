@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HospitalWPF.view_admin.convenio"
         mc:Ignorable="d"
-        Title="cadastrarConvenio" Height="300" Width="300">
+        Title="Cadastrar Convênio" Height="280" Width="475">
     <Grid>
-        
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="20,0,0,20" VerticalAlignment="Bottom" Width="120" Height="50" Click="btnSalvar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Right" Margin="0,0,20,20" VerticalAlignment="Bottom" Width="120" Height="50" Click="btnCancelar_Click"/>
+        <Label Content="Plano:" HorizontalAlignment="Left" Margin="20,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Empresa:" HorizontalAlignment="Left" Margin="20,55,0,0" VerticalAlignment="Top"/>
+        <Label Content="Telefone:" HorizontalAlignment="Left" Margin="20,86,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPlano" HorizontalAlignment="Left" Height="23" Margin="136,26,-157,0" TextWrapping="Wrap" Text="{Binding Convenio.NomePlano}" VerticalAlignment="Top" Width="313"/>
+        <TextBox x:Name="txtEmpresa" HorizontalAlignment="Left" Height="23" Margin="136,55,0,0" TextWrapping="Wrap" Text="{Binding Convenio.NomeEmpresa}" VerticalAlignment="Top" Width="313"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="136,89,0,0" TextWrapping="Wrap" Text="{Binding Convenio.Telefone}" VerticalAlignment="Top" Width="313"/>
     </Grid>
 </Window>
