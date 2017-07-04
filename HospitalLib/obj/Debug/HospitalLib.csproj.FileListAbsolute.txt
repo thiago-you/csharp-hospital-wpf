@@ -250,8 +250,6 @@ C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\Entit
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.csprojResolveAssemblyReference.cache
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.dll
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.pdb
-C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao12.resources
-C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.csproj.GenerateResource.Cache
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\Xceed.Wpf.AvalonDock.dll
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
@@ -268,3 +266,11 @@ C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\ro\Xc
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao206.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.csproj.GenerateResource.Cache
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao207.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao208.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao209.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao2010.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao2011.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao2012.resources

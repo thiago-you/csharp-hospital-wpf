@@ -23,6 +23,8 @@ namespace HospitalModel
         public String Area { get; set; }
         [Required]
         public Decimal Valor { get; set; }
+        [InverseProperty("AreaAtuacao")]
+        public IList<Medico> Medicos { get; set; }
 
         // sobrescreve o ToString para exibir o nome nas grids
         public override string ToString()

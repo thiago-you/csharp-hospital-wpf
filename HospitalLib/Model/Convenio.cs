@@ -25,6 +25,8 @@ namespace HospitalModel
         [Required]
         public String NomeEmpresa { get; set; }
         public String Telefone { get; set; }
+        [InverseProperty("Convenio")]
+        public IList<Paciente> Pacientes { get; set; }
 
         // sobrescreve o ToString para exibir o nome nas grids
         public override string ToString()

@@ -20,7 +20,7 @@ namespace HospitalLib.Controler
             this.SalvarMedico(new Medico()
             {
                 Nome = "Medico",
-                Crm = "000",
+                Crm = "0000/PR",
                 Banco = bancoControl.getBanco("1"),
                 AreaAtuacao = areaControl.getObjeto("1"),
                 Turno = "Diurno",
