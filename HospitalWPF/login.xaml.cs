@@ -1,6 +1,6 @@
 ﻿using HospitalLib.Controler;
 using HospitalWPF.view_admin;
-using HospitalWPF.view_medico;
+using HospitalWPF.view_relatorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,9 +52,10 @@ namespace HospitalWPF
             win.ShowDialog();
         }
 
-        private void btnMedico_Click(object sender, RoutedEventArgs e)
+        private void btnRelatorio_Click(object sender, RoutedEventArgs e)
         {
-            medicoLogin win = new medicoLogin();
+            relatorios win = new relatorios();
+            win.Show();
         }
     }
 }

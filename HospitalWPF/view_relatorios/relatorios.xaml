@@ -1,0 +1,13 @@
+﻿<Window x:Class="HospitalWPF.view_relatorios.relatorios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalWPF.view_relatorios"
+        mc:Ignorable="d"
+        Title="Relatórios" Height="300" Width="500">
+    <Grid>
+        <Button Content="Médico Relatório" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="Button_Click"/>
+
+    </Grid>
+</Window>
