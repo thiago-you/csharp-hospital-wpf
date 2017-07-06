@@ -25,7 +25,7 @@ namespace HospitalModel
         [Required]
         public Medico Medico { get; set; }
         [Required]
-        public DateTime DataAgendada { get; set; }
+        public Nullable<DateTime> DataAgendada { get; set; }
         
         // atributo unico para exibir um nome formatado corretamente nas views
         [NotMapped]

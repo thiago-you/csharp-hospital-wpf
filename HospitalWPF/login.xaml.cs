@@ -34,6 +34,7 @@ namespace HospitalWPF
             MedicoControler medicoControl = new MedicoControler();
             SecretariaControler secretariaControl = new SecretariaControler();
             AgendamentoControler agendamentoControl = new AgendamentoControler();
+            ConsultaControler consultaControl = new ConsultaControler();
 
             // Popula a Base caso esteja vazia 
             if (bancoControl.ObterBancos().Count == 0) { bancoControl.PopularBase(); }
@@ -43,6 +44,7 @@ namespace HospitalWPF
             if (medicoControl.ObterMedicos().Count == 0) { medicoControl.PopularBase(); }
             if (secretariaControl.ObterObjetos().Count == 0) { secretariaControl.PopularBase(); }
             if (agendamentoControl.ObterObjetos().Count == 0) { agendamentoControl.PopularBase(); }
+            if (consultaControl.ObterObjetos().Count == 0) { consultaControl.PopularBase(); }
 
         }
 

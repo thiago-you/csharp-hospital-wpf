@@ -10,6 +10,118 @@ namespace HospitalLib.Controler
     public class ConsultaControler
     {
         public HospitalContext ctx = new HospitalContext();
+        public PacienteControler pacienteControl = new PacienteControler();
+        public MedicoControler medicoControl = new MedicoControler();
+        public AgendamentoControler agenControl = new AgendamentoControler();
+
+        // Popula a base com um registro padrao
+        public void PopularBase()
+        {
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("1"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("1"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("2"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("3"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("3"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("3"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("4"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("5"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("5"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("2"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("3"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("5"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+            this.SalvarObjeto(new Consulta()
+            {
+                Paciente = pacienteControl.getObjeto("1"),
+                Medico = medicoControl.getMedico("1"),
+                Agendamento = agenControl.getObjeto("1"),
+                Data = DateTime.Now,
+                PrecoTotal = 100.00m,
+            });
+        }
 
         // Salva ou atualiza um objeto
         public void SalvarObjeto(Consulta objeto)
@@ -97,12 +209,15 @@ namespace HospitalLib.Controler
         }
 
         // busca todas as consultas de um medico especifico
-        public IList<Consulta> getConsultas(Medico medico)
+        public IList<Consulta> getConsultas(int Id)
         {
+            DateTime date = DateTime.Now;
+            var firstDayOfMonth = new DateTime(date.Year, date.Month, 1);
+
             var objetos = from objeto
-                                 in ctx.Consultas.Include("Paciente").Include("Medico").Include("Agendamento").Include("Agendamento.Paciente")
-                          where objeto.Medico.Id == medico.Id
-                                 select objeto;
+                          in ctx.Consultas.Include("Paciente").Include("Medico").Include("Agendamento").Include("Agendamento.Paciente")
+                          where objeto.Medico.Id == Id && objeto.Data > firstDayOfMonth
+                          select objeto;
 
             return objetos.ToList();
         }

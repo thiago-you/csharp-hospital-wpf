@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalLib.Controler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -25,12 +26,22 @@ namespace HospitalModel
         public AreaAtuacao AreaAtuacao { get; set; }
         [Required]
         public String Turno { get; set; }
+        [NotMapped]
+        public int getConsultas
+        {
+            get
+            {
+                ConsultaControler consulta = new ConsultaControler();
+                return consulta.getConsultas(this.Id).Count();
+            }
+        }
 
         // sobrescreve o ToString para exibir o nome nas grids 
         public override string ToString()
         {
             return Nome;
         }
+
 
     }
 }

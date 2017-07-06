@@ -24,7 +24,7 @@ namespace HospitalModel
         [Required]
         public Medico Medico { get; set; }
         [Required]
-        public DateTime Data { get; set; }
+        public Nullable<DateTime> Data { get; set; }
         [Required]
         public Decimal PrecoTotal { get; set; }
 

@@ -65,7 +65,6 @@ namespace HospitalWPF.view_admin.consulta
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
-            this.Consulta.Data = DateTime.Now;
             this.Consulta.Paciente = PacienteSelecionado;
             this.Consulta.Medico = MedicoSelecionado;
             this.Consulta.Agendamento = AgendamentoSelecionado;

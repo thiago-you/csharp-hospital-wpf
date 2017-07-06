@@ -29,7 +29,7 @@ namespace HospitalWindowsForm.view_medico
 
         private void binding()
         {
-            bsConsultas.DataSource = control.getConsultas(medico);
+            //bsConsultas.DataSource = control.getConsultas(medico);
         }
         private void btnVoltar_Click(object sender, EventArgs e)
         {

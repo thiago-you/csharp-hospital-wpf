@@ -49,9 +49,9 @@ namespace HospitalWindowsForm.view_admin
                 cbPaciente.SelectedValue = objeto.Paciente.Id;
                 cbMedico.SelectedValue = objeto.Medico.Id;
                 cbAdmin.SelectedValue = objeto.Secretaria.Id;
-                dateData.Value = objeto.DataAgendada;
-                dateHorario.Value = objeto.DataAgendada; ;
-                txtTurno.Text = objeto.Medico.Turno;
+                //dateData.Value = objeto.DataAgendada;
+                //dateHorario.Value = objeto.DataAgendada; ;
+                //txtTurno.Text = objeto.Medico.Turno;
             }
         }
 

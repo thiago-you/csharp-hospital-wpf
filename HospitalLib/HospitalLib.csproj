@@ -80,33 +80,9 @@
     <Compile Include="Controler\SecretariaControler.cs" />
     <Compile Include="Controler\Util.cs" />
     <Compile Include="CustomValidationCPFAttribute.cs" />
-    <Compile Include="Migrations\201707040523428_Versao2.0.6.cs" />
-    <Compile Include="Migrations\201707040523428_Versao2.0.6.Designer.cs">
-      <DependentUpon>201707040523428_Versao2.0.6.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707040526198_Versao2.0.7.cs" />
-    <Compile Include="Migrations\201707040526198_Versao2.0.7.Designer.cs">
-      <DependentUpon>201707040526198_Versao2.0.7.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707040529207_Versao2.0.8.cs" />
-    <Compile Include="Migrations\201707040529207_Versao2.0.8.Designer.cs">
-      <DependentUpon>201707040529207_Versao2.0.8.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707040532418_Versao2.0.9.cs" />
-    <Compile Include="Migrations\201707040532418_Versao2.0.9.Designer.cs">
-      <DependentUpon>201707040532418_Versao2.0.9.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707040536081_Versao2.0.10.cs" />
-    <Compile Include="Migrations\201707040536081_Versao2.0.10.Designer.cs">
-      <DependentUpon>201707040536081_Versao2.0.10.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707040537124_Versao2.0.1.1.cs" />
-    <Compile Include="Migrations\201707040537124_Versao2.0.1.1.Designer.cs">
-      <DependentUpon>201707040537124_Versao2.0.1.1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201707040539201_Versao2.0.1.2.cs" />
-    <Compile Include="Migrations\201707040539201_Versao2.0.1.2.Designer.cs">
-      <DependentUpon>201707040539201_Versao2.0.1.2.cs</DependentUpon>
+    <Compile Include="Migrations\201707060221453_Versao2.2.2.cs" />
+    <Compile Include="Migrations\201707060221453_Versao2.2.2.Designer.cs">
+      <DependentUpon>201707060221453_Versao2.2.2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Agendamento.cs" />
@@ -126,26 +102,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201707040523428_Versao2.0.6.resx">
-      <DependentUpon>201707040523428_Versao2.0.6.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707040526198_Versao2.0.7.resx">
-      <DependentUpon>201707040526198_Versao2.0.7.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707040529207_Versao2.0.8.resx">
-      <DependentUpon>201707040529207_Versao2.0.8.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707040532418_Versao2.0.9.resx">
-      <DependentUpon>201707040532418_Versao2.0.9.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707040536081_Versao2.0.10.resx">
-      <DependentUpon>201707040536081_Versao2.0.10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707040537124_Versao2.0.1.1.resx">
-      <DependentUpon>201707040537124_Versao2.0.1.1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707040539201_Versao2.0.1.2.resx">
-      <DependentUpon>201707040539201_Versao2.0.1.2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707060221453_Versao2.2.2.resx">
+      <DependentUpon>201707060221453_Versao2.2.2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

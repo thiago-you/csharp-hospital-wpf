@@ -19,11 +19,62 @@ namespace HospitalLib.Controler
         {
             this.SalvarMedico(new Medico()
             {
-                Nome = "Medico",
+                Nome = "Jonathan",
                 Crm = "0000/PR",
+                Cpf = "66422587708",
                 Banco = bancoControl.getBanco("1"),
                 AreaAtuacao = areaControl.getObjeto("1"),
                 Turno = "Diurno",
+                DataNasc = DateTime.Now,
+            });
+            this.SalvarMedico(new Medico()
+            {
+                Nome = "Rafael",
+                Crm = "1234/PR",
+                Cpf = "39415774924",
+                Banco = bancoControl.getBanco("1"),
+                AreaAtuacao = areaControl.getObjeto("2"),
+                Turno = "Diurno",
+                DataNasc = DateTime.Now,
+            });
+            this.SalvarMedico(new Medico()
+            {
+                Nome = "Alex",
+                Crm = "5678/PR",
+                Cpf = "64756648800",
+                Banco = bancoControl.getBanco("1"),
+                AreaAtuacao = areaControl.getObjeto("3"),
+                Turno = "Noturno",
+                DataNasc = DateTime.Now,
+            });
+            this.SalvarMedico(new Medico()
+            {
+                Nome = "Felipe",
+                Crm = "0012/PR",
+                Cpf = "86157455870",
+                Banco = bancoControl.getBanco("1"),
+                AreaAtuacao = areaControl.getObjeto("1"),
+                Turno = "Noturno",
+                DataNasc = DateTime.Now,
+            });
+            this.SalvarMedico(new Medico()
+            {
+                Nome = "R. Macedo",
+                Crm = "1902/PR",
+                Cpf = "47832433361",
+                Banco = bancoControl.getBanco("1"),
+                AreaAtuacao = areaControl.getObjeto("2"),
+                Turno = "Diurno",
+                DataNasc = DateTime.Now,
+            });
+            this.SalvarMedico(new Medico()
+            {
+                Nome = "Paulo",
+                Crm = "0230/PR",
+                Cpf = "31138544825",
+                Banco = bancoControl.getBanco("1"),
+                AreaAtuacao = areaControl.getObjeto("2"),
+                Turno = "Madrugada",
                 DataNasc = DateTime.Now,
             });
         }

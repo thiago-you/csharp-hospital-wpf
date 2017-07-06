@@ -21,7 +21,7 @@
         <ComboBox x:Name="cbPaciente" HorizontalAlignment="Left" Margin="136,26,-280,0" VerticalAlignment="Top" Width="436" ItemsSource="{Binding Pacientes}" SelectedValue="{Binding PacienteSelecionado}"/>
         <ComboBox x:Name="cbMedico" HorizontalAlignment="Left" Margin="136,54,0,0" VerticalAlignment="Top" Width="436" ItemsSource="{Binding Medicos}" SelectedValue="{Binding MedicoSelecionado}"/>
         <DatePicker x:Name="dateHorario" HorizontalAlignment="Left" Margin="431,78,-280,0" SelectedDate="{Binding Horario}" VerticalAlignment="Top" Width="141"/>
-        <DatePicker x:Name="dateData" HorizontalAlignment="Left" Margin="136,79,-13,0"  SelectedDate="{Binding Data}" VerticalAlignment="Top" Width="169"/>
+        <DatePicker x:Name="dateData" HorizontalAlignment="Left" Margin="136,79,-13,0"  SelectedDate="{Binding Path=Consulta.Data}" VerticalAlignment="Top" Width="169"/>
         <ComboBox x:Name="cbAgendamento" HorizontalAlignment="Left" Margin="431,109,0,0" VerticalAlignment="Top" Width="141" ItemsSource="{Binding Agendamentos}" SelectedValue="{Binding AgendamentoSelecionado}"/>
         <xctk:MaskedTextBox Mask="000,00" ValueDataType="{x:Type s:String}" x:Name="txtValor" HorizontalAlignment="Left" Height="23" Margin="136,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169"/>
     </Grid>

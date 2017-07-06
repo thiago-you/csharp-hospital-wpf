@@ -46,9 +46,9 @@ namespace HospitalWindowsForm.view_admin
             {
                 cbPaciente.SelectedIndex = objeto.Paciente.Id;
                 cbMedico.SelectedIndex = objeto.Medico.Id;
-                dateData.Value = objeto.Data;
-                dateHorario.Value = objeto.Data;
-                txtTotal.Text = objeto.PrecoTotal.ToString();
+                //dateData.Value = objeto.Data;
+                //dateHorario.Value = objeto.Data;
+                //txtTotal.Text = objeto.PrecoTotal.ToString();
             }
         }
 
@@ -108,8 +108,8 @@ namespace HospitalWindowsForm.view_admin
                 // seta os dados do agendamento
                 cbPaciente.SelectedValue = consulta_agendada.Paciente.Id;
                 cbMedico.SelectedValue = consulta_agendada.Medico.Id;
-                dateData.Value = consulta_agendada.DataAgendada;
-                dateHorario.Value = consulta_agendada.DataAgendada;
+                //dateData.Value = consulta_agendada.DataAgendada;
+                //dateHorario.Value = consulta_agendada.DataAgendada;
 
                 // seta o valor de uma consulta agendada com o médico
                 txtTotal.Text = atuacaoControl.getValor(consulta_agendada.Medico.AreaAtuacao.Id, true);

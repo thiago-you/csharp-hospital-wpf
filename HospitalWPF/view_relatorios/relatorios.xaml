@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Relatórios" Height="300" Width="500">
     <Grid>
-        <Button Content="Médico Relatório" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="Button_Click"/>
+        <Button Content="Relatório de Médicos" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="Button_Click"/>
 
     </Grid>
 </Window>
