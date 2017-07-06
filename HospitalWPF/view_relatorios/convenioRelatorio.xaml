@@ -1,11 +1,12 @@
-﻿<Window x:Class="HospitalWPF.view_relatorios.medicoRelatorio"
+﻿<Window x:Class="HospitalWPF.view_relatorios.convenioRelatorio"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalWPF.view_relatorios"
         xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
         mc:Ignorable="d"
-        Title="Relatório de Médicos" Height="600" Width="782.609">
+        Title="Relatório de Convênios" Height="600" Width="782.609">
     <Grid>
         <WindowsFormsHost HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="755" Margin="10,10,10,10">
             <rv:ReportViewer x:Name="ReportViewer" Load="ReportViewer_Load"/>

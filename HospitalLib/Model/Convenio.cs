@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HospitalLib.Controler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -26,7 +27,16 @@ namespace HospitalModel
         public String NomeEmpresa { get; set; }
         public String Telefone { get; set; }
         [InverseProperty("Convenio")]
-        public IList<Paciente> Pacientes { get; set; }
+        public IList<Paciente> ListaPacientes { get; set; }
+        [NotMapped]
+        public int Pacientes
+        {
+            get
+            {
+                PacienteControler consulta = new PacienteControler();
+                return consulta.getPacientes(this.Id).Count();
+            }
+        }
 
         // sobrescreve o ToString para exibir o nome nas grids
         public override string ToString()

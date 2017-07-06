@@ -266,3 +266,5 @@ C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\obj\Debug\view_
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\obj\Debug\view_relatorios\medicoRelatorio.g.cs
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\obj\Debug\view_relatorios\relatorios.g.cs
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\obj\Debug\view_relatorios\relatorios.baml
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\obj\Debug\view_relatorios\convenioRelatorio.g.cs
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\obj\Debug\view_relatorios\convenioRelatorio.baml

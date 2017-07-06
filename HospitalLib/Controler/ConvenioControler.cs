@@ -20,6 +20,18 @@ namespace HospitalLib.Controler
                 NomeEmpresa = "Sem Empresa",
                 Telefone = "",
             });
+            this.SalvarObjeto(new Convenio()
+            {
+                NomePlano = "Mais Saúde",
+                NomeEmpresa = "Clinipam",
+                Telefone = "",
+            });
+            this.SalvarObjeto(new Convenio()
+            {
+                NomePlano = "MedPlus",
+                NomeEmpresa = "Medprev",
+                Telefone = "",
+            });
         }
 
         // Salva ou atualiza um objeto

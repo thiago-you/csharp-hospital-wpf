@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Relatórios" Height="300" Width="500">
     <Grid>
-        <Button Content="Relatório de Médicos" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="150" Height="50" Click="Button_Click"/>
+        <Button x:Name="btnRelatorioMedicos" Content="Relatório de Médicos" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="180" Height="70" Click="btnRelatorioMedicos_Click" FontWeight="Bold" FontSize="13"/>
+        <Button x:Name="btnRelatorioConvenios" Content="Relatório de Convênios" HorizontalAlignment="Left" Margin="20,141,0,0" VerticalAlignment="Top"  Width="180" Height="70" FontSize="13" FontWeight="Bold" Click="btnRelatorioConvenios_Click"/>
 
     </Grid>
 </Window>

@@ -17,9 +17,59 @@ namespace HospitalLib.Controler
         {
             this.SalvarObjeto(new Paciente()
             {
-                Nome = "Paciente",
+                Nome = "João",
                 Convenio = convenioControl.getObjeto("1"),
                 DataNasc = DateTime.Now,
+                Cpf = "15744413375",
+            });
+            this.SalvarObjeto(new Paciente()
+            {
+                Nome = "Leonardo",
+                Convenio = convenioControl.getObjeto("1"),
+                DataNasc = DateTime.Now,
+                Cpf = "87794774888",
+            });
+            this.SalvarObjeto(new Paciente()
+            {
+                Nome = "Victor",
+                Convenio = convenioControl.getObjeto("1"),
+                DataNasc = DateTime.Now,
+                Cpf = "01183772130",
+            });
+            this.SalvarObjeto(new Paciente()
+            {
+                Nome = "Celestino",
+                Convenio = convenioControl.getObjeto("1"),
+                DataNasc = DateTime.Now,
+                Cpf = "53575416125",
+            });
+            this.SalvarObjeto(new Paciente()
+            {
+                Nome = "Cleverson",
+                Convenio = convenioControl.getObjeto("2"),
+                DataNasc = DateTime.Now,
+                Cpf = "15312771520",
+            });
+            this.SalvarObjeto(new Paciente()
+            {
+                Nome = "Dayana",
+                Convenio = convenioControl.getObjeto("2"),
+                DataNasc = DateTime.Now,
+                Cpf = "83581331209",
+            });
+            this.SalvarObjeto(new Paciente()
+            {
+                Nome = "Jaqueline",
+                Convenio = convenioControl.getObjeto("3"),
+                DataNasc = DateTime.Now,
+                Cpf = "27354493511",
+            });
+            this.SalvarObjeto(new Paciente()
+            {
+                Nome = "Hellen",
+                Convenio = convenioControl.getObjeto("2"),
+                DataNasc = DateTime.Now,
+                Cpf = "51735632732",
             });
         }
 
@@ -81,6 +131,17 @@ namespace HospitalLib.Controler
                                  select objeto;
 
             return selectedObjeto.ToList().ElementAt(0);
+        }
+
+        // busca a quantidade de pacientes em determinado convenio
+        public IList<Paciente> getPacientes(int Id)
+        {
+            var objetos = from objeto
+                          in ctx.Pacientes.Include("Convenio")
+                          where objeto.Convenio.Id == Id
+                          select objeto;
+
+            return objetos.ToList();
         }
     }
 }

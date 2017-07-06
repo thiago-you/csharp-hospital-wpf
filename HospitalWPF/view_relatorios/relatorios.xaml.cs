@@ -24,9 +24,15 @@ namespace HospitalWPF.view_relatorios
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void btnRelatorioMedicos_Click(object sender, RoutedEventArgs e)
         {
             medicoRelatorio win = new medicoRelatorio();
+            win.Show();
+        }
+
+        private void btnRelatorioConvenios_Click(object sender, RoutedEventArgs e)
+        {
+            convenioRelatorio win = new convenioRelatorio();
             win.Show();
         }
     }
