@@ -20,6 +20,7 @@ namespace HospitalLib.Controler
                 Nome = "Administrador",
                 Banco = bancoControl.getBanco("1"),
                 DataNasc = DateTime.Now,
+                Cpf = "71975276787",
             });
         }
 

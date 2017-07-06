@@ -73,5 +73,27 @@ namespace HospitalWPF.view_admin.admin
         {
             this.Close();
         }
+
+        private void btnDeletar_Click(object sender, RoutedEventArgs e)
+        {
+            Secretaria objeto = this.Objeto;
+            if (objeto != null)
+            {
+                if(objeto.Id == 1) {
+                    MessageBox.Show("Não é possível excluír esse registro padrão do sistema.");
+                }
+                else {
+                    try
+                    {
+                        this.control.RemoverObjeto(objeto);
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Não foi possível excluír essse registro.");
+                    }
+                }
+            }
+            this.Binding();
+        }
     }
 }

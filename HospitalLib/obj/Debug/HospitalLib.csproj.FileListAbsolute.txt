@@ -266,5 +266,5 @@ C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\ro\Xc
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
-C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao225.resources
+C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.Migrations.Versao30.resources
 C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalLib\obj\Debug\HospitalLib.csproj.GenerateResource.Cache

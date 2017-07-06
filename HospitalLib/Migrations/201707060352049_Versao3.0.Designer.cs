@@ -7,13 +7,13 @@ namespace HospitalLib.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Versao225 : IMigrationMetadata
+    public sealed partial class Versao30 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Versao225));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Versao30));
         
         string IMigrationMetadata.Id
         {
-            get { return "201707060259518_Versao2.2.5"; }
+            get { return "201707060352049_Versao3.0"; }
         }
         
         string IMigrationMetadata.Source

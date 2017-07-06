@@ -80,9 +80,9 @@
     <Compile Include="Controler\SecretariaControler.cs" />
     <Compile Include="Controler\Util.cs" />
     <Compile Include="CustomValidationCPFAttribute.cs" />
-    <Compile Include="Migrations\201707060259518_Versao2.2.5.cs" />
-    <Compile Include="Migrations\201707060259518_Versao2.2.5.Designer.cs">
-      <DependentUpon>201707060259518_Versao2.2.5.cs</DependentUpon>
+    <Compile Include="Migrations\201707060352049_Versao3.0.cs" />
+    <Compile Include="Migrations\201707060352049_Versao3.0.Designer.cs">
+      <DependentUpon>201707060352049_Versao3.0.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Agendamento.cs" />
@@ -102,8 +102,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201707060259518_Versao2.2.5.resx">
-      <DependentUpon>201707060259518_Versao2.2.5.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707060352049_Versao3.0.resx">
+      <DependentUpon>201707060352049_Versao3.0.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

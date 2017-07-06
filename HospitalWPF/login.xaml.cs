@@ -37,14 +37,20 @@ namespace HospitalWPF
             ConsultaControler consultaControl = new ConsultaControler();
 
             // Popula a Base caso esteja vazia 
-            if (bancoControl.ObterBancos().Count == 0) { bancoControl.PopularBase(); }
-            if (convenioControl.ObterObjetos().Count == 0) { convenioControl.PopularBase(); }
-            if (areaAtuacaoControl.ObterObjetos().Count == 0) { areaAtuacaoControl.PopularBase(); }
-            if (pacienteControl.ObterObjetos().Count == 0) { pacienteControl.PopularBase(); }
-            if (medicoControl.ObterMedicos().Count == 0) { medicoControl.PopularBase(); }
-            if (secretariaControl.ObterObjetos().Count == 0) { secretariaControl.PopularBase(); }
-            if (agendamentoControl.ObterObjetos().Count == 0) { agendamentoControl.PopularBase(); }
-            if (consultaControl.ObterObjetos().Count == 0) { consultaControl.PopularBase(); }
+            try {
+
+                if (bancoControl.ObterBancos().Count == 0) { bancoControl.PopularBase(); }
+                if (convenioControl.ObterObjetos().Count == 0) { convenioControl.PopularBase(); }
+                if (areaAtuacaoControl.ObterObjetos().Count == 0) { areaAtuacaoControl.PopularBase(); }
+                if (pacienteControl.ObterObjetos().Count == 0) { pacienteControl.PopularBase(); }
+                if (medicoControl.ObterMedicos().Count == 0) { medicoControl.PopularBase(); }
+                if (secretariaControl.ObterObjetos().Count == 0) { secretariaControl.PopularBase(); }
+                if (agendamentoControl.ObterObjetos().Count == 0) { agendamentoControl.PopularBase(); }
+                if (consultaControl.ObterObjetos().Count == 0) { consultaControl.PopularBase(); }
+
+            } catch (Exception) {
+                MessageBox.Show("Erro ao inicar programa.");
+            }
 
         }
 

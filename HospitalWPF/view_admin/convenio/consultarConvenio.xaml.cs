@@ -73,5 +73,29 @@ namespace HospitalWPF.view_admin.convenio
         {
             this.Close();
         }
+
+        private void btnDeletar_Click(object sender, RoutedEventArgs e)
+        {
+            Convenio objeto = this.Objeto;
+            if (objeto != null)
+            {
+                if (objeto.Id == 1)
+                {
+                    MessageBox.Show("Não é possível excluír esse registro padrão do sistema.");
+                }
+                else
+                {
+                    try
+                    {
+                        this.control.RemoverObjeto(objeto);
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Não foi possível excluír essse registro.");
+                    }
+                }
+            }
+            this.Binding();
+        }
     }
 }

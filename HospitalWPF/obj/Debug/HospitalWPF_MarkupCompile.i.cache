@@ -16,5 +16,5 @@ C:\Users\thyago\Documents\GitHub\csharp-hospital-wpf\HospitalWPF\App.xaml
 30178562572
 login.xaml;view_admin\adminHome.xaml;view_admin\administrador\cadastrarAdmin.xaml;view_admin\administrador\consultarAdmin.xaml;view_admin\agendamento\cadastrarAgendamento.xaml;view_admin\agendamento\consultarAgendamentos.xaml;view_admin\areaAtuacao\cadastrarAreaAtuacao.xaml;view_admin\areaAtuacao\consultarAreaAtuacao.xaml;view_admin\banco\cadastrarBanco.xaml;view_admin\banco\consultarBanco.xaml;view_admin\consulta\cadastrarConsulta.xaml;view_admin\consulta\consultarConsulta.xaml;view_admin\convenio\cadastrarConvenio.xaml;view_admin\convenio\consultarConvenio.xaml;view_admin\medico\cadastrarMedico.xaml;view_admin\medico\consultarMedico.xaml;view_admin\paciente\cadastrarPaciente.xaml;view_admin\paciente\consultarPaciente.xaml;view_relatorios\convenioRelatorio.xaml;view_relatorios\medicoRelatorio.xaml;view_relatorios\relatorios.xaml;
 
-True
+False
 

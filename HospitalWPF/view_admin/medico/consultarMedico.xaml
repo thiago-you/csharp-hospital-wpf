@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="Consultar Medico" Height="350" Width="690">
     <Grid>
-        <DataGrid x:Name="gridMedico" ItemsSource="{Binding Path=Medicos}" SelectedItem="{Binding Path=Objeto, Mode=TwoWay}" Margin="20,0,24,80">
+        <DataGrid x:Name="gridMedico" ItemsSource="{Binding Path=Medicos}" SelectedItem="{Binding Path=Objeto, Mode=TwoWay}" Margin="20,20,20,80">
             
         </DataGrid>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnCadastrar_Click"/>
-        <Button x:Name="btnAtualizar" Content="Atualizar" HorizontalAlignment="Left" Margin="160,250,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnAtualizar_Click"/>
-        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="538,250,0,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnCancelar_Click"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="20,250,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="btnCadastrar_Click"/>
+        <Button x:Name="btnAtualizar" Content="Atualizar" HorizontalAlignment="Left" Margin="140,250,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="btnAtualizar_Click"/>
+        <Button x:Name="btnDeletar" Content="Deletar" HorizontalAlignment="Left" Margin="260,250,0,0" VerticalAlignment="Top" Width="100" Height="50" Click="btnDeletar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="right" Margin="538,250,20,0" VerticalAlignment="Top" Width="120" Height="50" Click="btnCancelar_Click"/>
     </Grid>
 </Window>

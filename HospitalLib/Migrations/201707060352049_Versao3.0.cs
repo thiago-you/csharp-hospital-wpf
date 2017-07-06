@@ -3,7 +3,7 @@ namespace HospitalLib.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Versao225 : DbMigration
+    public partial class Versao30 : DbMigration
     {
         public override void Up()
         {

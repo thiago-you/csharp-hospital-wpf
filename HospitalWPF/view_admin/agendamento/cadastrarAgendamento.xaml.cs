@@ -27,6 +27,11 @@ namespace HospitalWPF.view_admin.agendamento
         MedicoControler medicoControl = new MedicoControler();
         SecretariaControler adminControl = new SecretariaControler();
 
+        // variaveis para fazer as validações de data
+        public DateTime dateNow = DateTime.Now;
+        public DateTime turno_inicio;
+        public DateTime turno_fim;
+
         public IList<Paciente> Pacientes { get; set; } = new List<Paciente>();
         public Paciente PacienteSelecionado { get; set; } = null;
         public IList<Medico> Medicos { get; set; } = new List<Medico>();
@@ -65,10 +70,22 @@ namespace HospitalWPF.view_admin.agendamento
 
         private void btnSalvar_Click(object sender, RoutedEventArgs e)
         {
-            this.Agendamento.Paciente = PacienteSelecionado;
-            this.Agendamento.Medico = MedicoSelecionado;
-            this.Agendamento.Secretaria = AdminSelecionado;
-            control.SalvarObjeto(this.Agendamento);
+            try
+            {
+                this.Agendamento.Paciente = PacienteSelecionado;
+                this.Agendamento.Medico = MedicoSelecionado;
+                this.Agendamento.Secretaria = AdminSelecionado;
+
+                control.SalvarObjeto(this.Agendamento);
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message, "Erro Interno");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Não foi possível salvar. Tente novamente.", "Erro Interno");
+            }
 
             this.DialogResult = true;
             this.Close();
