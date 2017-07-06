@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
         mc:Ignorable="d"
-        Title="Relatório de Médicos" Height="600" Width="782.609">
+        Title="Relatório de Médicos" Height="700" Width="782.609">
     <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="755" Margin="10,10,10,10">
+        <WindowsFormsHost HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="755" Margin="10,10,10,10">
             <rv:ReportViewer x:Name="ReportViewer" Load="ReportViewer_Load"/>
         </WindowsFormsHost>
     </Grid>

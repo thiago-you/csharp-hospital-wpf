@@ -6,9 +6,9 @@
         xmlns:local="clr-namespace:HospitalWPF.view_relatorios"
         xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
         mc:Ignorable="d"
-        Title="Relatório de Convênios" Height="600" Width="782.609">
+        Title="Relatório de Convênios" Height="700" Width="700">
     <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="540" VerticalAlignment="Top" Width="755" Margin="10,10,10,10">
+        <WindowsFormsHost HorizontalAlignment="Left" Height="640" VerticalAlignment="Top" Width="672" Margin="10,10,0,0">
             <rv:ReportViewer x:Name="ReportViewer" Load="ReportViewer_Load"/>
         </WindowsFormsHost>
     </Grid>
